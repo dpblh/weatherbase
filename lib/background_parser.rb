@@ -38,7 +38,6 @@ class BackgroundParser
 
         begin
 
-          p country.href
           doc = Nokogiri::HTML(open(URI.encode(country.href)))
 
           if country.href =~ /.*\/weather\/state\.php3.*/
